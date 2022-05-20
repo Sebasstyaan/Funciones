@@ -58,15 +58,15 @@ def ModoficarNotas():
             print('Id No Existe')
 
 def ConsultarNotas():
-    print('Consultando Notas')
+    #print('Consultando Notas')
     #global listaEstudiantes
-    codigo = input('Digite el id del estudiante: ')
-    for c in range(len(listaEstudiantes)):
-        if listaEstudiantes[c]['codigo'] == codigo:
-            for g in range(len(listaEstudiantes[c]['notas'])):
-                defi=int['nota']
-                definitiva=['notas'.values]
-            
+    #codigo = input('Digite el id del estudiante: ')
+    #for c in range(len(listaEstudiantes)):
+    #    if listaEstudiantes[c]['codigo'] == codigo:
+    #        for g in range(len(listaEstudiantes[c]['notas'])):
+    #            defi=int['nota']
+    #            definitiva=['notas'.values]
+    pass       
 
 #Programa Principal +++++++++++++++++++++++++++++++++++
 
