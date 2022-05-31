@@ -4,7 +4,7 @@ a. Ingresar estudiantes
 b. Listar estudiantes
 c. Modificar notas de un estudiante por código
 d. Consultar la nota definitiva de un estudiante por código
-e. Sali"""
+e. Salir"""
 
 def leerMenu():
     print("""Escoja la opcion que va a realizar\n
@@ -59,14 +59,17 @@ def ModoficarNotas():
 
 def ConsultarNotas():
     #print('Consultando Notas')
-    #global listaEstudiantes
-    #codigo = input('Digite el id del estudiante: ')
-    #for c in range(len(listaEstudiantes)):
-    #    if listaEstudiantes[c]['codigo'] == codigo:
-    #        for g in range(len(listaEstudiantes[c]['notas'])):
-    #            defi=int['nota']
-    #            definitiva=['notas'.values]
-    pass       
+    global listaEstudiantes
+    codigo = input('Digite el id del estudiante: ')
+    for c in range(len(listaEstudiantes)):
+        if listaEstudiantes[c]['codigo'] == codigo:
+            promedio=0
+            for g in range(len(listaEstudiantes[c]['notas'])):
+                promedio += listaEstudiantes[c]['notas'][g]
+
+            promedio = promedio / len(listaEstudiantes[c]['notas'])
+
+            print('Promedio de la nota final es: {}'.format(promedio))
 
 #Programa Principal +++++++++++++++++++++++++++++++++++
 
@@ -88,9 +91,3 @@ while True:
         break
 
 print(listaEstudiantes)
-
-#listaEstudiantes.append(estudiantes)
-#id=int(input('Digite su identificacion'))
-#cantidadNotas=int(input('Cuantas Notas Tiene El Estudiante: '))
-#notas=float(input('Digite las notas del estudiante: '))
-#definitiva=
